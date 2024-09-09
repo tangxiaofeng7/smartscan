@@ -1,2 +1,3 @@
-# smartscan
-burpsuite插件-为了纪念入职smart的一款插件
+# smartscan-burpsuite插件
+
+v1.0 无感被动icon指纹探测
