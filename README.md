@@ -1,5 +1,7 @@
-# smartscan-burpsuite插件
+## smartscan-burpsuite插件
+高速迭代中，欢迎关注
 
-> 2024年9月10日 1.1 无感被动指纹探测(支持icon、title、body、header)
-> 
-> 2024年9月9日 1.0 无感被动icon指纹探测(内置9875个指纹)
+## 最近更新
+[2022/9/11] v1.2 主动敏感信息探测功能(内置32个poc)
+[2022/9/10] v1.1 无感被动指纹探测(支持icon、title、body、header)</p>
+[2024/9/9] v1.0 无感被动icon指纹探测(内置9875个指纹)</p>
