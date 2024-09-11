@@ -1,8 +1,8 @@
 ## smartscan-burpsuite插件
 高速迭代中，欢迎关注
 
-
-[点击下载](https://github.com/tangxiaofeng7/smartscan/releases/download/v1.2/smartv1.2.jar)
+[高速下载地址](http://www.txf7.cn/upload/smartscan.jar)</p>
+[Github下载地址](https://github.com/tangxiaofeng7/smartscan/releases/download/v1.2/smartv1.2.jar)
 
 ## 最近更新
 [2022/9/11] v1.2 主动敏感信息探测功能(内置32个poc)</p>
