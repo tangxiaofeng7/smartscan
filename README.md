@@ -1,7 +1,7 @@
 ## smartscan-burpsuite插件
 高速迭代中，欢迎关注
 
-[高速下载地址](http://www.txf7.cn/upload/smartscan.jar)</p>
+[高速下载地址](http://www.txf7.cn/upload/smartscanv1.2.jar)</p>
 [Github下载地址](https://github.com/tangxiaofeng7/smartscan/releases/download/v1.2/smartv1.2.jar)
 
 ## 最近更新
