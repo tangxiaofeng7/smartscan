@@ -1,0 +1,13 @@
+name: poc-yaml-Spring-Jolokia
+rules:
+    r0:
+        request:
+            method: GET
+            path: /actuator/jolokia/list
+        expression: response.status == 200 && responseBody.contains("springframework")
+    r1:
+        request:
+            method: GET
+            path: /jolokia/list
+        expression: response.status == 200 && responseBody.contains("springframework")
+expression: r0() || r1()

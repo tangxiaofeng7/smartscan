@@ -1,0 +1,8 @@
+name: poc-yaml-.idea-leak
+rules:
+    r0:
+        request:
+            method: GET
+            path: /.idea/modules.xml
+        expression: response.status == 200 && responseBody.contains(".idea")
+expression: r0()

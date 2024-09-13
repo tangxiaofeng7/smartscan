@@ -1,0 +1,8 @@
+name: poc-yaml-Druid-Monitor-Login
+rules:
+    r0:
+        request:
+            method: GET
+            path: /druid/login.html
+        expression: response.status == 200 && responseBody.contains("druid")
+expression: r0()

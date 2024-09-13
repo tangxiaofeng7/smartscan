@@ -1,0 +1,8 @@
+name: poc-yaml-couchDB-config
+rules:
+    r0:
+        request:
+            method: GET
+            path: /_config
+        expression: response.status == 200 && responseBody.contains("httpd_design_handlers")
+expression: r0()

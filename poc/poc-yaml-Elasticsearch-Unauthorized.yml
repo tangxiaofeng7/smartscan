@@ -1,0 +1,8 @@
+name: poc-yaml-Elasticsearch-Unauthorized
+rules:
+    r0:
+        request:
+            method: GET
+            path: /_cat
+        expression: response.status == 200 && responseBody.contains("/_cat")
+expression: r0()

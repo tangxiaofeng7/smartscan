@@ -1,0 +1,18 @@
+name: poc-yaml-swagger-ui-docs
+rules:
+    r0:
+        request:
+            method: GET
+            path: /api-docs
+        expression: response.status == 200 && responseBody.contains("Swagger")
+    r1:
+        request:
+            method: GET
+            path: /v1/api-docs
+        expression: response.status == 200 && responseBody.contains("Swagger")
+    r2:
+        request:
+            method: GET
+            path: /v2/api-docs
+        expression: response.status == 200 && responseBody.contains("Swagger")
+expression: r0() || r1() || r2()

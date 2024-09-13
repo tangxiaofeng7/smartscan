@@ -1,0 +1,10 @@
+name: poc-yaml-shiro-rememberMe
+rules:
+    r0:
+        request:
+            method: GET
+            path: /
+            headers:
+                Cookie: rememberMe=1
+        expression: response.status == 200 && responseBody.contains("rememberMe")
+expression: r0()

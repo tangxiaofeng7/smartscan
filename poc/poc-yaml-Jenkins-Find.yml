@@ -1,0 +1,8 @@
+name: poc-yaml-Jenkins-Find
+rules:
+    r0:
+        request:
+            method: GET
+            path: /manage
+        expression: response.status == 200 && responseBody.contains("Jenkins")
+expression: r0()

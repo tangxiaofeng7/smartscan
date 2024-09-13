@@ -1,0 +1,8 @@
+name: poc-yaml-nacos-Unauthorized
+rules:
+    r0:
+        request:
+            method: GET
+            path: /nacos/index.html
+        expression: response.status == 200 && responseBody.contains("codemirror")
+expression: r0()

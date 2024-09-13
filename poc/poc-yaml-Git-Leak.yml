@@ -1,0 +1,8 @@
+name: poc-yaml-git-leak
+rules:
+    r0:
+        request:
+            method: GET
+            path: /.git/HEAD
+        expression: response.status == 200 && responseBody.contains(".git")
+expression: r0()

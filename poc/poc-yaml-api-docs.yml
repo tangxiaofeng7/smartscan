@@ -1,0 +1,8 @@
+name: poc-yaml-api-docs
+rules:
+    r0:
+        request:
+            method: GET
+            path: /openapi.json
+        expression: response.status == 200 && responseBody.contains("openapi")
+expression: r0()

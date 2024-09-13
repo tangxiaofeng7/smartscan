@@ -1,0 +1,8 @@
+name: poc-yaml-Solr-Unauthorized
+rules:
+    r0:
+        request:
+            method: GET
+            path: /solr/admin
+        expression: response.status == 200 && responseBody.contains("Solr")
+expression: r0()

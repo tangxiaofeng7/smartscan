@@ -1,0 +1,13 @@
+name: poc-yaml-Spring-Env-Leak
+rules:
+    r0:
+        request:
+            method: GET
+            path: /env
+        expression: response.status == 200 && responseBody.contains("java.runtime.version")
+    r1:
+        request:
+            method: GET
+            path: /actuator/,
+        expression: response.status == 200 && responseBody.contains("_links")      
+expression: r0()

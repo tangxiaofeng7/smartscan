@@ -1,0 +1,23 @@
+name: poc-yaml-ueditor-find
+rules:
+    r0:
+        request:
+            method: GET
+            path: /ueditor/index.html
+        expression: response.status == 200
+    r1:
+        request:
+            method: GET
+            path: /ueditor/jsp/controller.jsp
+        expression: response.status == 200
+    r2:
+        request:
+            method: GET
+            path: /ueditor/php/controller.php
+        expression: response.status == 200
+    r3:
+        request:
+            method: GET
+            path: /ueditor/net/controller.ashx
+        expression: response.status == 200
+expression: r0() || r1() || r2() || r3() 

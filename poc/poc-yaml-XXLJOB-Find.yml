@@ -1,0 +1,14 @@
+name: poc-yaml-XXLJOB-Find
+rules:
+    r0:
+        request:
+            method: GET
+            path: /xxl-job-admin/toLogin
+        expression: response.status == 200 && responseBody.contains("xxl-job-admin")
+    r1:
+        request:
+            method: GET
+            path: /xxl-job-admin/jobinfo
+        expression: response.status == 200 && responseBody.contains("jobGroup")
+
+expression: r0()

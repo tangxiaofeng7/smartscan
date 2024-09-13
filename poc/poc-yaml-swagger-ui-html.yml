@@ -1,0 +1,18 @@
+name: poc-yaml-swagger-ui-html
+rules:
+    r0:
+        request:
+            method: GET
+            path: /index.html
+        expression: response.status == 200 && responseBody.contains("swagger")
+    r1:
+        request:
+            method: GET
+            path: /swagger/index.html
+        expression: response.status == 200 && responseBody.contains("swagger")
+    r2:
+        request:
+            method: GET
+            path: /swagger-ui.html
+        expression: response.status == 200 && responseBody.contains("Swagger")
+expression: r0() || r1() || r2()

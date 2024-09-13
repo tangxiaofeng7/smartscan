@@ -1,0 +1,8 @@
+name: poc-yaml-Soap-Leak
+rules:
+    r0:
+        request:
+            method: GET
+            path: /webservice
+        expression: response.status == 200 && responseBody.contains("SOAP")
+expression: r0()

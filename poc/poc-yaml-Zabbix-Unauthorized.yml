@@ -1,0 +1,8 @@
+name: poc-yaml-Zabbix-Unauthorized
+rules:
+    r0:
+        request:
+            method: GET
+            path: /zabbix.php?action=problem.view&ddreset=1
+        expression: response.status == 200 && responseBody.contains("Zabbix")
+expression: r0()
